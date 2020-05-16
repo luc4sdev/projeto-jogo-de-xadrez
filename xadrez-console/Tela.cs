@@ -58,7 +58,9 @@ namespace xadrez_console
         {
             for (int i = 0; i < tab.linhas; i++)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write(8 - i + " ");
+                Console.ResetColor();
                 for (int j = 0; j < tab.colunas; j++)
                 {
                     imprimirPeca(tab.peca(i, j));
@@ -79,7 +81,9 @@ namespace xadrez_console
 
             for (int i = 0; i < tab.linhas; i++)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.Write(8 - i + " ");
+                Console.ResetColor();
                 for (int j = 0; j < tab.colunas; j++)
                 {
                     if (posicoePossiveis[i, j])
